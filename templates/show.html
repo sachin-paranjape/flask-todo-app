@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %}
+- Show To-do
+{% endblock title %}
+
+{% block body %}
+    <div class="container my-3">
+
+
+        {% if allTodo|length==0 %}
+        <div class="alert alert-warning" role="alert">
+            No to-dos found. Add your first to-do!
+        </div>
+
+        {% else %}
+        <h2>Your to-dos</h2>
+        <table class="table">
+
+            <tbody>
+                <thead>
+                    <tr>
+                        <th scope="col">SNo</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Actions</th>
+
+                    </tr>
+                </thead>
+
+                {% for todo in allTodo %}
+                <tr>
+                    <th scope="row">{{loop.index}}</th>
+                    <td>{{todo.title}}</td>
+                    <td>{{todo.description}}</td>
+                    <td>{{todo.date_created}}</td>
+                    <td>
+                        <a href="/delete/{{todo.sno}}" type="button" class="btn btn-outline-dark btn-sm">Delete</button>
+                            <a href="/update/{{todo.sno}}" type="button"
+                                class="btn btn-outline-primary btn-sm">Update</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+        
+    </div>
+{% endblock body %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+     - Home   
+{% endblock title %}
+{% block body %}
+
+    <div class="container my-3">
+        <h2>Welcome to To-do App</h2>
+        <p>This is a simple to-do application where you can add, view, update, and delete your tasks.</p>
+    </div>
+
+    <div class="container mb-2">
+        <h2>Login to create your first to-do</h2>
+        <div>
+            <a href="/login" class="btn btn-primary btn-sm">Login</a>
+            <br>
+            <a href="/register" class="btn btn-primary btn-sm">New User? Create a free account</a>
+        </div>
+    </div>
+
+{% endblock body %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %} - Add Todo {% endblock title %}
+
+{% block body %}
+<div class="container">
+    <h2>Add New Todo</h2>
+    
+    <form action="{{ url_for('add') }}" method="POST">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" name="title" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="desc" class="form-label">Description</label>
+            <textarea class="form-control" id="desc" name="desc" rows="3" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Add Todo</button>
+        <a href="{{ url_for('show') }}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock body %}
