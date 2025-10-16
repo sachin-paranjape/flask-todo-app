@@ -83,17 +83,17 @@ When you're done, deactivate the virtual environment:
 ## Project Structure
 
 flask-todo-app/
--├── app.py # Main Flask application
--├── requirements.txt # Python dependencies
--├── templates/ # HTML templates
--│ ├── base.html # Base template with navbar
--│ ├── index.html # Home page
--│ ├── login.html # User login form
--│ ├── register.html # User registration
--│ ├── show.html # Display todos
--│ ├── add.html # Add new todo
--│ └── update.html # Edit existing todo
--├── todo-env/ # Virtual environment (auto-generated)
--└── instance/
--└── todo.db # SQLite database (auto-generated)
+├── app.py # Main Flask application
+├── requirements.txt # Python dependencies
+├── templates/ # HTML templates
+│ ├── base.html # Base template with navbar
+│ ├── index.html # Home page
+│ ├── login.html # User login form
+│ ├── register.html # User registration
+│ ├── show.html # Display todos
+│ ├── add.html # Add new todo
+│ └── update.html # Edit existing todo
+├── todo-env/ # Virtual environment (auto-generated)
+└── instance/
+└── todo.db # SQLite database (auto-generated)
 
