@@ -19,7 +19,7 @@ A full-stack web application with user authentication and CRUD operations.
 - Implemented human review and testing for security and functionality
 
 ## Installation
-git clone [text](https://github.com/sachin-paranjape/flask-todo-app.git)
+git clone https://github.com/sachin-paranjape/flask-todo-app.git
 cd flask-todo-app
 python -m venv venv
 source venv/bin/activate # Windows: venv\Scripts\activate
