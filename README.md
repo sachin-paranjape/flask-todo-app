@@ -21,7 +21,7 @@ A full-stack web application with user authentication and CRUD operations.
 ## Installation
 - git clone https://github.com/sachin-paranjape/flask-todo-app.git
 - cd flask-todo-app
-- python -m venv venv
-- source venv/bin/activate # Windows: venv\Scripts\activate
+- virtualenv todo-env
+- source todo-env/bin/activate # Windows (Command Prompt) : todo-env\Scripts\activate #Windows (Powershell) : todo-env\Scripts\Activate.ps1
 - pip install -r requirements.txt
 - python app.py
